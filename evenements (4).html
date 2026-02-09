@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e6a8a4ba14b197d9edb8e517d30fd3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e6a8a4ba14b197d9edb8e517d30fd3f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2e6a8a4ba14b197d9edb8e517d30fd3f = L.map(
+                "map_2e6a8a4ba14b197d9edb8e517d30fd3f",
+                {
+                    center: [45.4401467, 4.3873058],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29bbb3ec395278ed5bd53e20732ec665 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_29bbb3ec395278ed5bd53e20732ec665.addTo(map_2e6a8a4ba14b197d9edb8e517d30fd3f);
+        
+    
+            var marker_230fc09d0deb81ddb4c513849e9d455f = L.marker(
+                [45.395537, 4.3145796],
+                {
+}
+            ).addTo(map_2e6a8a4ba14b197d9edb8e517d30fd3f);
+        
+    
+            var icon_308c0be075a1507b7910b2f67374eff6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd5a4f87392d11100af47f86fc2f6ff9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cfd0c7403b47f533bbb12cfbfa2589ae = $(`<div id="html_cfd0c7403b47f533bbb12cfbfa2589ae" style="width: 100.0%; height: 100.0%;">             <div style="width:200px">                 <h4>Défilé des étudiants du Lycée de la mode Adrien Testud </h4>                 <b>Date(s):</b> 2026-04-03<br>                 <b>Horaires:</b> Non spécifié<br>                 <b>Address:</b> 92 Rue de la République, 42500 Le Chambon-Feugerolles<br>                 <p></p>                 <img src="https://37eb93f491.cbaul-cdnwnd.com/f9c3422c1d6e3ce503bde0259f52bd47/200000128-852f6862b0/la-forge-1.jpg" style="width:100%; border-radius:5px;">             </div>             </div>`)[0];
+                popup_bd5a4f87392d11100af47f86fc2f6ff9.setContent(html_cfd0c7403b47f533bbb12cfbfa2589ae);
+            
+        
+
+        marker_230fc09d0deb81ddb4c513849e9d455f.bindPopup(popup_bd5a4f87392d11100af47f86fc2f6ff9)
+        ;
+
+        
+    
+    
+            marker_230fc09d0deb81ddb4c513849e9d455f.bindTooltip(
+                `<div>
+                     Défilé des étudiants du Lycée de la mode Adrien Testud 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_230fc09d0deb81ddb4c513849e9d455f.setIcon(icon_308c0be075a1507b7910b2f67374eff6);
+            
+    
+            var marker_2e622d5709d04ed996fe89a42325d3f8 = L.marker(
+                [45.395537, 4.3145796],
+                {
+}
+            ).addTo(map_2e6a8a4ba14b197d9edb8e517d30fd3f);
+        
+    
+            var icon_c107fe3c7509770755b9f64fe13cad75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e97ef46479f25a6eef6ffeed6d4aeef2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6b46b87a84b60372a1e45ec85509597d = $(`<div id="html_6b46b87a84b60372a1e45ec85509597d" style="width: 100.0%; height: 100.0%;">             <div style="width:200px">                 <h4>Défilé des étudiants du Lycée de la mode Adrien Testud </h4>                 <b>Date(s):</b> 2026-04-02<br>                 <b>Horaires:</b> 14:30:00 et 20:30<br>                 <b>Address:</b> 92 Rue de la République, 42500 Le Chambon-Feugerolles <br>                 <p>Répétition générale à 14h30 Représentation à 20h30</p>                 <img src="https://37eb93f491.cbaul-cdnwnd.com/f9c3422c1d6e3ce503bde0259f52bd47/200000128-852f6862b0/la-forge-1.jpg" style="width:100%; border-radius:5px;">             </div>             </div>`)[0];
+                popup_e97ef46479f25a6eef6ffeed6d4aeef2.setContent(html_6b46b87a84b60372a1e45ec85509597d);
+            
+        
+
+        marker_2e622d5709d04ed996fe89a42325d3f8.bindPopup(popup_e97ef46479f25a6eef6ffeed6d4aeef2)
+        ;
+
+        
+    
+    
+            marker_2e622d5709d04ed996fe89a42325d3f8.bindTooltip(
+                `<div>
+                     Défilé des étudiants du Lycée de la mode Adrien Testud 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e622d5709d04ed996fe89a42325d3f8.setIcon(icon_c107fe3c7509770755b9f64fe13cad75);
+            
+    
+            var marker_246ed716e39c8c6e14f2ffd929a88bae = L.marker(
+                [45.4412735, 4.3836221],
+                {
+}
+            ).addTo(map_2e6a8a4ba14b197d9edb8e517d30fd3f);
+        
+    
+            var icon_ae076925246fb981a7a9b01745409606 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dce10f5d4dbdb07066e92498f99f3f3e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ff4623867b49f8574b8adea7cbbafc7 = $(`<div id="html_6ff4623867b49f8574b8adea7cbbafc7" style="width: 100.0%; height: 100.0%;">             <div style="width:200px">                 <h4>Tek Frippe</h4>                 <b>Date(s):</b> 2026-04-04<br>                 <b>Horaires:</b> Non spécifié<br>                 <b>Address:</b> 21 Rue Paul Bert, 42000 Saint-Étienne<br>                 <p></p>                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXHeiLA7whajCcy-BPO3X0O1JR-Lq314Eag&s" style="width:100%; border-radius:5px;">             </div>             </div>`)[0];
+                popup_dce10f5d4dbdb07066e92498f99f3f3e.setContent(html_6ff4623867b49f8574b8adea7cbbafc7);
+            
+        
+
+        marker_246ed716e39c8c6e14f2ffd929a88bae.bindPopup(popup_dce10f5d4dbdb07066e92498f99f3f3e)
+        ;
+
+        
+    
+    
+            marker_246ed716e39c8c6e14f2ffd929a88bae.bindTooltip(
+                `<div>
+                     Tek Frippe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_246ed716e39c8c6e14f2ffd929a88bae.setIcon(icon_ae076925246fb981a7a9b01745409606);
+            
+</script>
+</html>
